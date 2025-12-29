@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 280px 1fr 300px;
   grid-template-rows: 200px 1fr 1fr;
   background: #e2e8f0;
 }
@@ -189,4 +189,72 @@ header .search {
 
 .project-icon i:hover {
   transform: scale(1.1);
+}
+
+.announce,
+.trend-container {
+  padding: 12px;
+}
+
+.announce-text h3 {
+  font-size: 0.95rem;
+}
+
+.trends-announces {
+  display: grid;
+  grid-template-rows: 30px repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 30px;
+}
+
+.trends-announces h2 {
+  height: 20px;
+  margin-left: 20px;
+}
+
+.announce {
+  grid-row: 2;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 10px 20px;
+}
+
+.announce-text {
+  margin-bottom: 15px;
+}
+
+.trends {
+  margin-top: 30px;
+}
+
+.trends > h2 {
+  margin-bottom: 20px;
+}
+
+.trend-container {
+  background-color: #fff;
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+}
+
+.trend-container .perfil {
+  display: flex;
+  margin-bottom: 6px;
+  align-items: center;
+  width: 100%;
+}
+
+.trend-container .perfil .text {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.perfil-pic {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
 }
